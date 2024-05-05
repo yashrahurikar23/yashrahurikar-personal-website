@@ -1,5 +1,5 @@
 # About
-I am a Software + Product Engineer helping people develop software projects from ideation to taking it to users. Currently working on some ideas am interested in Conversational AI and Image Generation space.
+I am a Software + Product Engineer helping people develop software projects from ideation to taking it to users. Currently working on some ideas in Conversational AI and Image Generation space.
 
 <!-- > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
