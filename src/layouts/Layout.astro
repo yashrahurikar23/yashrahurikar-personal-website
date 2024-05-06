@@ -86,6 +86,16 @@ if (title) {
 
 		<style define:vars={{ configHue }}></style>  <!-- defines global css variables. This will be applied to <html> <body> and some other elements idk why -->
 
+		<!-- Google tag (gtag.js) -->
+		<script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-Y217K85CJR"></script>
+		<script type="text/javascript">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-Y217K85CJR');
+		</script>
+
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"is-home": isHomePage, "enable-banner": enableBanner}]}>
 		<ConfigCarrier></ConfigCarrier>
