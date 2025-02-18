@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --output dist",
+    "build": "next build && npm run move-output",
+    "move-output": "mkdir -p dist && cp -r .next/* dist/",
     "start": "next start",
     "lint": "next lint"
   },
