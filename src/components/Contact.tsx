@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button"; // Importing Button component
 
 const defaultFormState = {
   name: {
@@ -15,21 +18,25 @@ const defaultFormState = {
     error: "",
   },
 };
+
+/**
+ * Contact component that renders a contact form.
+ * It handles form submission and manages form state.
+ */
 export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Write your submit logic here
     console.log(formData);
   };
+
   return (
     <form className="form" onSubmit={handleSubmit}>
       <div className="flex flex-col md:flex-row justify-between gap-5">
-        <input
+        <Input
           type="text"
           placeholder="Your Name"
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
           value={formData.name.value}
           onChange={(e) => {
             setFormData({
@@ -41,10 +48,9 @@ export const Contact = () => {
             });
           }}
         />
-        <input
+        <Input
           type="email"
           placeholder="Your email address"
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 py-2 rounded-md text-sm text-neutral-700 w-full"
           value={formData.email.value}
           onChange={(e) => {
             setFormData({
@@ -58,10 +64,10 @@ export const Contact = () => {
         />
       </div>
       <div>
-        <textarea
+        <Textarea
           placeholder="Your Message"
           rows={10}
-          className="bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 px-2 mt-4 py-2 rounded-md text-sm text-neutral-700 w-full"
+          className="mt-4"
           value={formData.message.value}
           onChange={(e) => {
             setFormData({
@@ -74,12 +80,9 @@ export const Contact = () => {
           }}
         />
       </div>
-      <button
-        className="w-full px-2 py-2 mt-4 bg-neutral-100 rounded-md font-bold text-neutral-500"
-        type="submit"
-      >
-        Submit{" "}
-      </button>
+      <Button className="w-full px-2 py-2 mt-4" type="submit">
+        Submit
+      </Button>
     </form>
   );
 };

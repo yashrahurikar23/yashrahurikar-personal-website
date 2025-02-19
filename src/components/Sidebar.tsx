@@ -13,7 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { isMobile } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
+import { ModeToggle } from "@/components/ModeToggler";
 /**
  * Sidebar component that displays navigation links and social links.
  * It can be toggled open or closed based on the screen size.
@@ -36,9 +36,7 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/resume" text="Read Resume" />
-            </div>
+            <ModeToggle collapsed={true} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -73,7 +71,6 @@ export const Navigation = ({
         <Link
           key={link.href}
           href={link.href}
-          target="_blank" // Open link in a new tab
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
             "text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
@@ -117,7 +114,7 @@ export const Navigation = ({
 
 const SidebarHeader = () => {
   return (
-    <div className="flex flex-col space-x-2">
+    <div className="flex  space-x-2">
       <Image
         src="https://o27ap7fdmi.ufs.sh/f/U73XlSpzFGAMWDA3W0YqP513t4n7ZVJMAfjHQax0kUTorwYB"
         alt="Avatar"
