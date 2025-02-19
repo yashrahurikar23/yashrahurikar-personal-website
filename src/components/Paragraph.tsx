@@ -11,12 +11,7 @@ export const Paragraph = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={twMerge(
-        "text-sm lg:text-base font-normal text-secondary",
-        className
-      )}
-    >
+    <p className={twMerge("text-sm lg:text-base text-primary", className)}>
       {children}
     </p>
   );

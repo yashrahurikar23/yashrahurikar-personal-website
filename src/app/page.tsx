@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Container>
       <span className="text-4xl">👋</span>
-      <Heading className="font-black">Hi! I&apos;m Yash</Heading>
+      <Heading className="">Hi! I&apos;m Yash</Heading>
       <Paragraph className="max-w-xl mt-4">
         Founder & Product Engineer @ PieceOfCode
       </Paragraph>
@@ -28,10 +28,7 @@ export default function Home() {
         </Highlight>
         If you like to talk about these topic, feel free to give me a ping!
       </Paragraph>
-      <Heading
-        as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
-      >
+      <Heading as="h2" className=" text-lg md:text-lg lg:text-lg mt-20 mb-4">
         What I&apos;ve been working on
       </Heading>
       <Products />
