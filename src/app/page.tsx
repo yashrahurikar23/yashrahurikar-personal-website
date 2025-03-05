@@ -15,21 +15,20 @@ export default function Home() {
         Founder & Product Engineer @ PieceOfCode
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m currently running my own small venture called PieceOfCode into
-        software space, working on some of my own projects. I have{" "}
-        <Highlight>7 years of experience</Highlight> building scalable web apps
-        that are performance optimized and good looking.
+        I&apos;m currently running my own small venture called PieceOfCode Labs
+        into software space, working on some of my own projects. I have{" "}
+        <Highlight>been enjoying building software for past 7 years</Highlight>
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
         I like to talk about{" "}
         <Highlight>
-          Software, Technology, Products, recently have started vneturing in AI/
-          ML and Robotics.
+          Software, Technology, Products, recently have started venturing and
+          learning into AI/ ML and Robotics 🦾 space, if you are interested in
+          these topics, feel free to ping me!
         </Highlight>
-        If you like to talk about these topic, feel free to give me a ping!
       </Paragraph>
       <Heading as="h2" className=" text-lg md:text-lg lg:text-lg mt-20 mb-4">
-        What I&apos;ve been working on
+        Some of the projects I have been working on 👇🏻
       </Heading>
       <Products />
       {/* <TechStack /> */}
