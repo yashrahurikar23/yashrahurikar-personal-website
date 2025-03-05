@@ -15,8 +15,9 @@ export default function Home() {
         Founder & Product Engineer @ PieceOfCode
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m currently running my own small venture called PieceOfCode Labs
-        into software space, working on some of my own projects. I have{" "}
+        I&apos;m currently running my own small venture{" "}
+        <Highlight>PieceOfCode Labs</Highlight>
+        in software space, working on some of my own projects and have{" "}
         <Highlight>been enjoying building software for past 7 years</Highlight>
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
