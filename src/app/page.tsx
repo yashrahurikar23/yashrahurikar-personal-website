@@ -12,13 +12,15 @@ export default function Home() {
       <span className="text-4xl">👋</span>
       <Heading className="">Hi! I&apos;m Yash</Heading>
       <Paragraph className="max-w-xl mt-4">
-        Founder & Product Engineer @ PieceOfCode
+        Founder & Product Engineer @Tweeny.ai | @PieceOfCode
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m currently running my own small venture{" "}
-        <Highlight>PieceOfCode Labs</Highlight>
-        in software space, working on some of my own projects and have{" "}
-        <Highlight>been enjoying building software for past 7 years</Highlight>
+        I&apos;m currently working with Tweeny Technologies, building products
+        for the future of AI.
+      </Paragraph>
+      <Paragraph className="max-w-xl mt-4">
+        I have also worked on couple of project of my own for solving real world
+        problems.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
         I like to talk about{" "}
