@@ -12,7 +12,7 @@ export default function Home() {
       <span className="text-4xl">👋</span>
       <Heading className="">Hi! I&apos;m Yash</Heading>
       <Paragraph className="max-w-xl mt-4">
-        Founder & Product Engineer @Tweeny.ai | @PieceOfCode
+        Product Engineer @Tweeny.ai | @PieceOfCode
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
         I&apos;m currently working with Tweeny Technologies, building products
